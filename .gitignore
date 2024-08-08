@@ -1,0 +1,3 @@
+.direnv/flake-profile*
+vendor/bundle/*
+!vendor/bundle/.keep
