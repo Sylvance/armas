@@ -31,7 +31,7 @@
             pkgs.yarn
             pkgs.ruby_3_3
             pkgs.libyaml.dev
-            pkgs.openssl_3_2.dev
+            pkgs.openssl_3_6.dev
             pkgs.postgresql
             pkgs.autoconf269
             pkgs.automake
@@ -44,7 +44,7 @@
           env = [
             {
               name = "PKG_CONFIG_PATH";
-              value = "${pkgs.pkg-config}:${pkgs.openssl_3_2.dev}/lib/pkgconfig:${pkgs.libyaml.dev}/lib/pkgconfig:${pkgs.postgresql}/lib/pkgconfig:${pkgs.libffi.dev}/lib/pkgconfig:${pkgs.secp256k1}/lib/pkgconfig";
+              value = "${pkgs.pkg-config}:${pkgs.openssl_3_6.dev}/lib/pkgconfig:${pkgs.libyaml.dev}/lib/pkgconfig:${pkgs.postgresql}/lib/pkgconfig:${pkgs.libffi.dev}/lib/pkgconfig:${pkgs.secp256k1}/lib/pkgconfig";
             }
             {
               name = "LIBTOOL";
